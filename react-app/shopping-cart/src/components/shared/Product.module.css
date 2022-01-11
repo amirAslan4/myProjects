@@ -1,0 +1,103 @@
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width:210px;
+    border:1px solid silver ;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 55px;
+    margin-right: 30px;
+    overflow: hidden;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+
+.itemContainer:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 30px 0 rgba(46, 46, 46, 0.308);
+
+}
+
+.itemContainer img {
+    height: 175px;
+    align-self: center;
+    
+}
+
+.itemContainer h3 {
+    color: rgb(34, 33, 33);
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.itemContainer p {
+    font-size: 14px;
+    margin-top: 0 ;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.linkContainer a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.linkContainer a:hover {
+    color: #0b499b;
+}
+
+.buttonContainer button {
+    background: #1a73e8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+}
+
+.buttonContainer button:hover {
+    background-color: #0b499b;
+}
+
+.trashIcon {
+    padding: 1px 4px 2px;
+}
+
+.trashIcon img {
+    width: 18px;
+    height: 18px !important;
+}
+
+.addbutton {
+    padding: 5px 15px;
+}
+
+
+.increase {
+    font-size: 20px;
+    padding:1px 7px;
+}
+
+.decrease {
+  
+    font-size: 20px;
+    padding:1px 9px;
+    
+}
+
+.itemsQuantity {
+    font-size: 15px;
+    color: #1a73e8;
+    margin: 0 4px;
+}
+

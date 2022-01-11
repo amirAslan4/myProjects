@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+    min-height: 100vh;
+    padding: 150px 0;
+}
+
+
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container aside {
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 4px;
+    height: fit-content;
+    width: 20vw;
+    margin-left: 30px;
+    padding:5px 18px 35px 18px;
+}
+
+aside span {
+    color: #1a73e8;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+aside p {
+    font-size: 14px;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.buttonContainer button:first-child {
+    background: none;
+    border: none;
+    color: rgb(17, 170, 119);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonContainer button:last-child {
+    background: rgb(17, 170, 119);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+.buttonContainer button:last-child:hover {
+    background-color: rgb(15, 129, 91);
+}
+
+.clearContainer, .checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.clearContainer h3, .checkoutContainer h3 {
+    color: #1a73e8;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.clearContainer a , .checkoutContainer a {
+    text-decoration: none;
+    background: rgb(17, 170, 119);
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.clearContainer a:hover, .checkoutContainer a:hover {
+    background-color:  rgb(15, 129, 91);
+}
+
+@media screen and (max-width:991.98px) {
+    .container aside {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+       padding-top: 62px;
+      
+    }
+    .container aside {
+        order: 0;
+        text-align: center;
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    aside .buttonContainer {
+        justify-content: space-around;
+    }
+
+
+    .productsContainer {
+        order: 1;
+    }
+
+
+    .buttonContainer button:last-child {
+        padding: 10px 15px;
+
+    }
+}

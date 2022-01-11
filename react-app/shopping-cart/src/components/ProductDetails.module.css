@@ -1,0 +1,170 @@
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 80vw;
+    margin-top: 70px;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid silver;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+.container img {
+    height: 450px;
+    width: 450px;
+}
+
+.info {
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 25px 20px;
+    margin-left: 15px;
+}
+
+.info h3 {
+    color: #1a73e8;
+    font-size: 1rem;
+}
+
+.info p:first-of-type {
+    font-size: 14px;
+}
+
+.info p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.info p:nth-of-type(2) span {
+    color: rgb(221, 165, 22);
+}
+
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.buttonContainer span {
+    background-color: rgba(46, 134, 46, 0.774);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+}
+
+.buttonContainer a {
+    text-decoration: none;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.buttonContainer a:hover {
+    background-color: #0b499b;
+}
+
+@media screen and (max-width:992px) {
+    
+    .container img {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    
+    .buttonContainer {
+        flex-direction: column;
+    }
+
+    .buttonContainer span {
+        align-self: flex-start;
+        margin-bottom: 35px;
+    }
+
+    .buttonContainer a {
+        text-align: center;
+        width: 100%;
+        line-height: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:670px)  {
+ 
+    
+    .container img {
+        height: 200px;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width:510px)  {
+
+    .mainContainer {
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+        
+
+    }
+ 
+    .container img {
+        height: 200px;
+        width: 200px;
+        margin: 25px auto;
+    }
+
+    .container .info {
+        margin-left: 0;
+       padding: 0 20px 30px; 
+    }
+
+    .info p:nth-of-type(2) {
+       margin: 30px auto 70px;
+    }
+    
+
+}

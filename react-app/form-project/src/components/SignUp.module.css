@@ -1,0 +1,113 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 20px 50px;
+}
+
+.header {
+    color: #0078d8;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    color: rgb(85,85,85);
+    font-size: 0.9rem;
+    height: 90px;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+
+}
+
+
+.formGroup input {
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+
+.invalidInput {
+    outline: none;
+    border: 1px solid rgb(218, 8, 8) !important;
+}
+
+input:not([type="checkbox"]):focus {
+    outline: none;
+    border-color: #1a73e8 !important;
+}
+
+.formGroup input:not([type="checkbox"]) {
+    width: 300px;
+    height: 25px;
+
+}
+
+.formGroup span {
+    color: rgb(185, 3, 3);
+    background-color: rgba(255,0,0,0.178);
+    width: fit-content;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 0 5px;
+    font-size: 0.75rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    color: #5488cc;
+}
+
+input[type="checkbox"] {
+    border: 1px solid silver;
+    width: 18px;
+    height: 18px;
+    margin:3px 0 0 30px ;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #1a73e8;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    
+}
+
+
+.formButton {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.formButton a {
+    text-decoration: none;
+    color:#1a73e8 ;
+    font-weight: bold;
+}
+
+.formButton button {
+    background: #1a73e8;
+    border: 1px solid #1a73e8;
+    color: #fff;
+    width: 85px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    
+}
+

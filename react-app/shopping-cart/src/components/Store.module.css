@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    padding:150px 100px 100px ;
+    min-height: 100vh;
+}
+
+
+@media screen and (max-width:763.98px) {
+    .container {
+        padding: 150px 30px 100px;
+    }
+}
+
+@media screen and (max-width:623.98px) {
+    .container {
+        padding: 150px 0 100px;
+    }
+}
+
+@media screen and (max-width:563.98px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 150px 0 100px;
+    }
+}

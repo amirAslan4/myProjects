@@ -1,0 +1,44 @@
+.Landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55vw;
+}
+
+.Landing input {
+     width: 380px;
+     background-color: #f6f6f6;
+     outline: none;
+     border: 1px solid silver;
+     height: 35px;
+     margin-bottom: 50px;
+     padding-left: 10px;
+     border-radius: 4px;
+     caret-color: darkorange;
+}
+
+.Landing h3 {
+    font-weight: bold;
+    color: rgb(0, 88, 139);
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width:767.98px) {
+    .Landing input {
+        width: 50vw;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .Landing {
+        width: 100vw;
+    }
+
+    .Landing input {
+        width: 80vw;
+        height: 45px;
+    }
+}
+
